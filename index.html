@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TalentHub Dashboard</title>
+
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================================
+         NAVIGATION BAR (TOP HEADER)
+    ================================= -->
+    <nav class="navbar">
+      <!-- Brand Logo -->
+      <div class="logo">Talent<span style="color: #ff8a00">Hub</span></div>
+
+      <!-- Primary Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Category</a></li>
+        <li><a href="#">Job</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <!-- Login / Signup Buttons + Mobile Menu -->
+      <div class="nav-actions">
+        <button class="signin-btn">Login</button>
+        <button class="signup-btn">Signup</button>
+
+        <!-- Hamburger icon for mobile -->
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+
+
+    <main>
+      <div class="sidebar">
+        <div class="sidebar-logo">
+          <h1>Talent <span style="color: #ff8a00"> Hub</span></h1>
+        </div>
+
+        <!-- Sidebar navigation list -->
+        <ul class="menu">
+          <li class="active"><i class="fas fa-tachometer"></i> Dashboard</li>
+          <li><i class="fas fa-users"></i> Users</li>
+          <li><i class="fas fa-briefcase"></i> Jobs</li>
+          <li><i class="fas fa-file-alt"></i> Applications</li>
+          <li><i class="fas fa-bell"></i> Notifications</li>
+          <li><i class="fas fa-cog"></i> Settings</li>
+          <li><i class="fas fa-chart-pie"></i> Reports</li>
+          <li><i class="fas fa-th"></i> Layout</li>
+        </ul>
+      </div>
+
+      <!-- ================================
+             MAIN CONTENT AREA
+        ================================= -->
+      <div class="main-content">
+        <!-- Dashboard Header -->
+        <div class="header">
+          <h1>Welcome to dashboard in TalentHub</h1>
+        </div>
+
+        <!-- Dashboard Stats Section -->
+        <div class="stats-container">
+          <!-- Users Card -->
+          <div class="stat-box" style="background-color: #ff8a00">
+            <div>
+              <p>User</p>
+              <h2>1,245</h2>
+            </div>
+            <i class="fa fa-users"></i>
+          </div>
+
+          <!-- Jobs Card -->
+          <div class="stat-box" style="background-color: #52a3ff">
+            <div>
+              <p>Job</p>
+              <h2>320</h2>
+            </div>
+            <i class="fa fa-briefcase"></i>
+          </div>
+
+          <!-- Applications Card -->
+          <div class="stat-box" style="background-color: #00df74">
+            <div>
+              <p>Application</p>
+              <h2>890</h2>
+            </div>
+            <i class="fa fa-file-alt"></i>
+          </div>
+
+          <!-- Notifications Card -->
+          <div class="stat-box" style="background-color: #000">
+            <div>
+              <p>Notifications</p>
+              <h2>12</h2>
+            </div>
+            <i class="fa fa-bell"></i>
+          </div>
+        </div>
+
+        <!-- Recent Applications Table -->
+        <div class="applications-container">
+          <div class="section-header">Recent Applications</div>
+
+          <table class="applications-table">
+            <thead>
+              <tr>
+                <th>Applicant</th>
+                <th>Job</th>
+                <th>Status</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>All Mohamed</td>
+                <td>Frontend Developer</td>
+                <td><span class="status accessed">Accessed</span></td>
+                <td>Sep 26, 2025</td>
+              </tr>
+              <tr>
+                <td>Amina Yusuf</td>
+                <td>UVAX Designer</td>
+                <td><span class="status applied">Applied</span></td>
+                <td>Sep 16, 2025</td>
+              </tr>
+              <tr>
+                <td>Hassan Warszawa</td>
+                <td>Backend Engineer</td>
+                <td><span class="status rejected">Rejected</span></td>
+                <td>Sep 16, 2025</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
